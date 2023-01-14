@@ -2,17 +2,16 @@ import java.util.Scanner;
 
 public class App {
     public static void main(String[] args) throws Exception {
-        Holidays holidays = new Holidays();
+        Holydayzer holidays = new Holydayzer();
 
         Scanner input = new Scanner(System.in);
-        System.out.println("\nDigite uma data no formato dd/mm/aaaa ");
+        System.out.println("Digite uma data no formato dd/mm/aaaa:\n");
         String date = input.nextLine();
 
-        holidays.isHoliday(date);
+        holidays.getHoliday(date);
 
-        System.out.println("\nVeja abaixo uma lista com todos os feriados brasileiros em 2023:");
+        System.out.println("Veja abaixo uma lista com todos os feriados brasileiros em 2023:\n");
         holidays.printHolidays();
-      
 
     }
 }
